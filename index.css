@@ -1,0 +1,261 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+
+  color: white;
+}
+/* html{zoom: 0.6} */
+
+body{
+  background-color: black;
+}
+
+h1{
+  font-size: 110px;
+}
+h2{
+  font-size: 90px;
+  margin-bottom: 40px;
+}
+p{
+  font-size: 25px;
+  color: hsl(0, 0%, 73%);
+}
+span.green{
+  color: hsl(118, 94%, 53%) ;
+}
+
+span.white{
+  color: white ;
+}
+
+
+
+
+section {
+  width: 80%;
+  margin: 0 auto;
+
+  margin-bottom: 300px;
+}
+
+
+section img{
+  width: 70%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+
+
+
+
+
+
+
+
+
+section#launch{
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+section#launch div.titre{
+  width: fit-content;
+  text-align: center;
+  margin-bottom: 100px;
+}
+section#launch div.img{
+  position: relative;
+  width: 70%;
+}
+section#launch img{
+  width: 100%;
+}
+
+section#launch div.img div.voile{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 48.44%, #000000 100%);
+  width: 100%;
+  
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+
+
+
+section#batt{
+  display: flex;
+  flex-direction: column;
+}
+section#batt img{
+  margin: 0 auto;
+}
+
+section#batt p:last-of-type{
+  max-width: 500px;
+}
+
+
+
+
+section#buy{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#buy h2{
+  margin-bottom: 100px;
+}
+section#buy div{
+  width: fit-content;
+  max-width: 500px;
+  display: grid;
+  grid-template-rows: 1fr 1px 1fr;
+  grid-template-columns: 1fr;
+  background-color: #141414;
+  border-radius: 40px;
+}
+section#buy div img{
+  margin: 0 auto;
+}
+
+
+section#buy div div.separator{
+  background-color: grey;
+  width: 50%;
+  height: 1px;
+  margin: 0 auto;
+}
+section#buy div div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+section#buy div div div{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ width: 100%;
+ padding: 0 40px;
+}
+section#buy div div div p{
+  margin: 20px 0;
+}
+section#buy div div div p:nth-child(2n){
+  margin-left: auto;
+  color: white;
+}
+section#buy div div button{
+  background-color: transparent;
+  border: 1px solid white !important;
+  color: white;
+  outline: none;
+  border: none;
+  width: 50%;
+  padding: 8px 0;
+  border-radius: 100px;
+  margin-top: 50px;
+  font-size: 20px;
+  transition: background-color 0.2s;
+}
+
+
+
+
+button:hover{
+  cursor: pointer;
+  background-color: white !important;
+  color: black !important;
+}
+
+
+
+#data {
+  display: flex;
+  flex-direction: column;
+}
+#data img{
+  margin: 0 auto !important;
+}
+
+#ui{
+  display: flex;
+  flex-direction: column;
+}
+#ui > div{
+  width: 70%;
+  max-width: 800px;
+  position: relative;
+  margin:0 auto ;
+  margin-top: 100px;
+  /* max-width: 70vh;
+  margin: 0 auto !important;
+  margin-top: 100px !important; */
+}
+#ui > div div.voile{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 48.44%, #000000 100%);
+}
+#ui img {
+  width:  100%;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+  h1{
+      font-size: 100px;
+  }
+  h2{
+      font-size: 70px;
+  }
+  p{
+      font-size: 18px;
+  }
+
+  section img{
+      width: 100% !important;
+  }
+
+  section#launch div.img{
+      width: 100%;
+  }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+  h1{
+      font-size: 70px;
+  }
+  h2{
+      font-size: 50px;
+  }
+
+  
+
+}
