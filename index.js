@@ -31,6 +31,8 @@ function loaded(){
     //     sleep(1);
     // }
     
+    navbar_load()
+
     document.getElementsByClassName("loading-cont")[0].remove();
 }
 
